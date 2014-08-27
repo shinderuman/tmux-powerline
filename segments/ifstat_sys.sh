@@ -3,7 +3,7 @@
 
 run_segment() {
 	sleeptime="0.5"
-	iface="wlan0"
+	iface="en4"
 	RXB=$(</sys/class/net/"$iface"/statistics/rx_bytes)
 	TXB=$(</sys/class/net/"$iface"/statistics/tx_bytes)
 	sleep "$sleeptime" 
